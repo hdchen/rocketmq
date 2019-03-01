@@ -140,6 +140,7 @@ public class ConsumeMessageConcurrentlyServiceTest {
         pushConsumer.getDefaultMQPushConsumerImpl().updateTopicSubscribeInfo(topic, messageQueueSet);
     }
 
+
     @Test
     public void testPullMessage_ConsumeSuccess() throws InterruptedException, RemotingException, MQBrokerException, NoSuchFieldException,Exception {
         final CountDownLatch countDownLatch = new CountDownLatch(1);
